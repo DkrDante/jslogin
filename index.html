@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">>_</a>
+        <nav class="navbar">
+            
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <button class="butlogpop">Login</button>
+        </nav>
+    </header>
+    <section class="section">
+        <div class="wrapper">
+            <span class="close"><i class='bx bx-x' ></i></span>
+            <div class="logbox">
+                <div class="form-box login">
+                    <div class="logboxtitle">
+                        <h2>Login</h2>
+                        <p>Fill tha details</p>
+                    </div>
+                    <form action="#">
+                        <div class="input">
+                            <span class="icon"><i class='bx bx-envelope'></i></span>
+                            <input type="email" required>
+                            <label>Email</label>
+
+                        </div>
+                        <div class="input">
+                            <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                            <input type="password" required>
+                            <label>Password</label>
+                            
+                        </div>
+                        <div class="remember-me">
+                           <label><input type="checkbox">Remember me</label>
+                           <a href="#">Forget password?</a>
+                           
+                        </div>
+                        <div class="login"><button type = "submit" class="button">Login</button></div>
+                        <div class="new-acc">
+                            <p>Don't have an account?</p>
+                            <a href="#" class="register-now">Register</a>
+                        </div>
+                        
+                    </form>
+                </div>
+                <div class="form-box register">
+                    <div class="logboxtitle">
+                        <h2>Registeration</h2>
+                        <p>Enter the following information to register</p>
+                    </div>
+                    <form action="#">
+                        <div class="input">
+                            <span class="icon"><i class='bx bx-user' ></i></span>
+                            <input type="text" required>
+                            <label>Full Name</label>
+
+                        </div>
+                        <div class="input">
+                            <span class="icon"><i class='bx bx-envelope'></i></span>
+                            <input type="email" required>
+                            <label>Email</label>
+
+                        </div>
+                        <div class="input">
+                            <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                            <input type="password" required>
+                            <label>Password</label>
+                            
+                        </div>
+                        <div class="remember-me">
+                           <label><input type="checkbox">I agree to the terms and conditions</label>
+                           <a href="#">Forget password?</a>
+                           
+                        </div>
+                        <div class="login"><button type = "submit" class="button">Register</button></div>
+                        <div class="new-acc">
+                            <p>Already have an account?</p>
+                            <a href="#" class="login-now">Login</a>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+            
+            <div class="media-sec">
+                <a href="#">
+                    <i class='bx bxl-google'></i>
+
+                    <span>
+                      Log in with google
+                    </span>
+                </a>
+                <a href="#">
+                    <i class='bx bxl-meta' ></i>
+                    <span>Log in with Meta</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
+

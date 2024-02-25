@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+
+* {
+    font-family: 'roboto', 'sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    position: fixed;
+    right: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+
+.logo {
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    pointer-events: none;
+
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 100;
+    margin-right: 40px;
+    position: sticky;
+    transition: color 0.25s;
+
+
+}
+.navbar a:hover{
+    color: #2E6B8C;
+
+}
+
+
+
+.navbar .butlogpop {
+    position: relative;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+
+
+}
+
+.navbar .butlogpop::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    left: 0;
+    bottom: -4px;
+    opacity: .85;
+
+}
+
+.section {
+    background: url('image.jpg') no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 450px;
+    height: 100%;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    box-shadow: -1px 0 10px rgba(0, 0, 0, 0.2);
+    border-left: 2px solid rgba(255, 255,255, 0.1);
+    z-index: 11;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    opacity: 0;
+    pointer-events: none;
+
+}
+.wrapper.active-popup{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.wrapper .form-box.login{
+    display: block;
+}
+.wrapper.active .form-box.login{
+    display: none;
+}
+.wrapper .form-box.register{
+    display: none;
+}
+.wrapper.active .form-box.register{
+    display: block;
+}
+.form-box p {
+    margin-top: 10px;
+    color: #fff;
+}
+.form-box h2{
+    color: #fff;
+
+}
+.form-box{
+    align-items: center;
+    text-align: center;
+}
+
+    
+
+
+.logox .logboxtitle {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+}
+.logboxtitle h2{
+    font-size: 32px;
+
+}
+.logboxtitle p{
+    font-size: 14px;
+    font-weight: 500;
+}
+.logbox .input{
+    position:relative;
+    width: 100%;
+    height: 50px;
+
+    margin: 30px 0px;
+    border-bottom: 2px solid #fff;
+
+}
+.input input{
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    padding-right: 25px;
+
+}
+.input label{
+    position: absolute;
+    top: 50%;
+    left:0;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    transform: translateY(-50%);
+    transition: .25s;
+}
+.input .icon{
+    position: absolute;
+    font-size: 19px;
+    color: #fff;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%)
+
+
+}
+.input input:focus~label,
+.input input:valid~label{
+    top: -5px;
+
+}
+.logbox .remember-me{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+     margin: -15px 0px 15px;
+     display: flex;
+     justify-content: space-between;
+}
+.remember-me label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+.remember-me a{
+    color: #fff;
+    text-decoration: none;
+}
+.remember-me a:hover{
+    text-decoration: underline;
+
+}
+.logbox .button{
+    width: 100%;
+    height:45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 23px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor:pointer;
+    font-size: 16px;
+    color: #222;
+    font-weight: 600;
+
+}
+.logbox .new-acc {
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    margin-top: 25px;
+    margin: 25px 0 15px;
+}
+.new-acc a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.new-acc a:hover{
+    text-decoration: underline;
+
+}
+.media-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.media-sec a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid#fff;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 23px;
+    color: #fff ;
+
+    text-decoration: none;
+    margin: 0 8px 1.5px 10;
+    transition: 0.5s;
+    
+
+
+}
+.media-sec a:hover{
+    background:rgba(255, 255,255, 0.1)
+}
+.media-sec a i{
+    font-size: 22px;
+
+}
+.media-sec a span{
+    font-size: 16px;
+    font-weight: 500;
+}
+.close{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+}
+.close i{
+    font-size: 32px;
+    color: #222;
+}
