@@ -47,8 +47,26 @@
 .navbar a:hover {
     color: #2E6B8C;
 
+
 }
 
+.navbar a::after {
+    content: '';
+    display: flex;
+    width: 0;
+    height: 2px;
+    background: #2E6B8C;
+    margin-right: auto;
+    transition: 0.4s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+    height: 2px;
+}
+ul{
+    display: flex;
+}
 
 
 .navbar .butlogpop {

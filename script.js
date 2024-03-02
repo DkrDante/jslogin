@@ -21,7 +21,7 @@ close.onclick = () => {
 }
 let docTitle = document.title;
 window.addEventListener("blur", () => {
-    document.title = "Come Back ☹️☹️";
+    document.title = "I miss you love ☹️";
 })
 window.addEventListener("focus", () => {
     document.title = docTitle;
