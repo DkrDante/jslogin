@@ -28,7 +28,8 @@ window.addEventListener("focus", () => {
 })
 
 function showHidePassword() {
-
+    var passwordInput = document.getElementById("password");
+    var showHideButton = document.getElementById("show-hide-button");
 
     if (passwordInput.type === "password") {
         passwordInput.type = "text";
@@ -38,7 +39,7 @@ function showHidePassword() {
         showHideButton.innerHTML = "Show Password";
     }
 }
+
 var passwordInput = document.getElementById("password");
 var showHideButton = document.getElementById("show-hide-button");
-var showHideButton = document.getElementById("show-hide-button");
-showHideButton.addEventListener("onclick", showHideButton);
+showHideButton.addEventListener("click", showHidePassword);
