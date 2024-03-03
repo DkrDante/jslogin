@@ -26,3 +26,19 @@ window.addEventListener("blur", () => {
 window.addEventListener("focus", () => {
     document.title = docTitle;
 })
+
+function showHidePassword() {
+
+
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        showHideButton.innerHTML = "Hide Password";
+    } else {
+        passwordInput.type = "password";
+        showHideButton.innerHTML = "Show Password";
+    }
+}
+var passwordInput = document.getElementById("password");
+var showHideButton = document.getElementById("show-hide-button");
+var showHideButton = document.getElementById("show-hide-button");
+showHideButton.addEventListener("onclick", showHideButton);
